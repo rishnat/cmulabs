@@ -26,7 +26,7 @@ begin
 	
 	else if(wr_en && dest_addr!=5'd0)	//Do not write into zero register
 	begin
-		reg_array[	]<=write_data;
+		reg_array[dest_addr]<=write_data;
 	end
 	
 	else
